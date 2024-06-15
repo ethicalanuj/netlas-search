@@ -1,10 +1,9 @@
-venv
-result*
-__pycache__
-*.pyc
-.env
 
-output
-output/*
-output*/
-*output*
+# Ignore all files
+*
+
+# Except for specific files
+!paginationSubdomain.py
+!subdomains.py
+!README.md
+!netlas-search.py
