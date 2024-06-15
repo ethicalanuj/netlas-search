@@ -22,13 +22,32 @@ NETLAS_API_KEY=YOUR_API_KEY
 python netlas-search.py -h
 ```
 
-------
+#### Ex. Output
+```
+python netlas-search.py -d 135.125.237.168 -o netlas-result.txt
+```
+```
+smtpstarttls://135.125.237.168:25
+smtps://135.125.237.168:465
+https://135.125.237.168:443/
+imap://135.125.237.168:143
+imaps://135.125.237.168:993
+smtp://135.125.237.168:25
+http://135.125.237.168:80/
+imapstarttls://135.125.237.168:143
+```
+
+----------
 ## subdomains.py
 
 ```
 python subdomains.py -h
 ```
 
+#### Ex. Output
+```
+python subdomains.py -d "*.netlas.io"
+```
 ```
 app.netlas.io
 pay.netlas.io
