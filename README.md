@@ -9,7 +9,7 @@ source venv/bin/activate
 
 #### Install the required libraries:
 ```
-pip install netlas python-dotenv
+pip install netlas python-dotenv chardet
 ```
 
 #### Create a .env file in the root directory of your project:
@@ -42,6 +42,17 @@ imapstarttls://135.125.237.168:143
 
 ```
 python subdomains.py -h
+```
+
+```
+python subdomains.py -i inputfile -o outputfile
+```
+#### For better result use URL with *
+
+```
+*.example.com
+example.*
+*.example.net
 ```
 
 #### Ex. Output

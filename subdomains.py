@@ -21,7 +21,7 @@ netlas_connection = netlas.Netlas(api_key=api_key)
 # Set up argument parsing
 parser = argparse.ArgumentParser(description='Search for subdomains from specified hosts.')
 group = parser.add_mutually_exclusive_group(required=True)
-group.add_argument('-d', '--domain', help='Domain search query in the format <*.domain.com> or <domain.*>.')
+group.add_argument('-d', '--domain', help='Domain search query in the format "*.domain.com" or "domain.*".')
 group.add_argument('-i', '--inputfile', help='Input file with a list of domain queries (one per line).')
 parser.add_argument('-o', '--output', required=True, help='Output file to save results')
 args = parser.parse_args()
